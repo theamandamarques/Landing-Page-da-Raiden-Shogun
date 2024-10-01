@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raiden Shogun</title>
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f7f0fa;
+            color: #333;
+        }
+
+        /* Estilos do cabeçalho */
+        header {
+            background-color: #f7f0fa;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #ccc;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            padding: 10px 20px;
+        }
+
+        nav ul li a:hover {
+            color: #7a3db5;
+        }
+
+        .signup-btn {
+            background-color: #7a3db5;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .signup-btn:hover {
+            background-color: #5b2b90;
+        }
+
+        /* Estilos da seção principal (Hero) */
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #dcd3ef;
+            padding: 40px;
+            margin: 20px auto;
+            border-radius: 20px;
+            max-width: 1200px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .hero .text {
+            flex: 1;
+        }
+
+        .hero .text h1 {
+            font-size: 3rem;
+            color: #4b0082;
+            margin-bottom: 10px;
+        }
+
+        .hero .text p {
+            font-size: 1.2rem;
+            color: #6a5acd;
+            margin-bottom: 20px;
+        }
+
+        .read-more-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #7a3db5;
+            color: white;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .read-more-btn:hover {
+            background-color: #5b2b90;
+        }
+
+        .hero .image img {
+            max-width: 300px;
+            border-radius: 20px;
+        }
+
+        /* Estilos das seções Artwork e Recent Search */
+        .content {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+
+        .artwork, .recent-search {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 48%;
+        }
+
+        .artwork h2, .recent-search h2 {
+            font-size: 1.8rem;
+            color: #4b0082;
+            margin-bottom: 20px;
+        }
+
+        .art-images {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .art-images img {
+            max-width: 100px;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .art-images img:hover {
+            transform: scale(1.1);
+        }
+
+        .recent-search ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .recent-search ul li {
+            display: flex;
+            align-items: center;
+            background-color: #f0ebfa;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+        }
+
+        .recent-search ul li a {
+            text-decoration: none;
+            font-size: 1rem;
+            color: #4b0082;
+            margin-left: 10px;
+        }
+
+        .recent-search ul li img {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #f7f0fa;
+            margin-top: 40px;
+            border-top: 1px solid #ccc;
+        }
+
+        footer p {
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <div class="logo">
+            <img src="login.jpeg" alt="Logo" width="40">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Search</a></li>
+                <li><a href="#">Message</a></li>
+                <li><a href="#">Log in</a></li>
+                <li><a href="#" class="signup-btn">Sign up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção Hero -->
+    <section class="hero">
+        <div class="text">
+            <h1>Raiden Shogun</h1>
+            <p>She is the God of Eternity from Inazuma and the current Electro Archon</p>
+            <a href="#" class="read-more-btn">Read More</a>
+        </div>
+        <div class="image">
+            <img src="guerreira 1.jpeg" alt="Raiden Shogun">
+        </div>
+    </section>
+
+    <!-- Conteúdo - Artwork e Recent Search -->
+    <div class="content">
+        <section class="artwork">
+            <h2>Artwork</h2>
+            <div class="art-images">
+                <img src="guerreira 2.jpeg" alt="Artwork 1">
+                <img src="guerreira 3.jpeg" alt="Artwork 2">
+                <img src="guerreira 7.jpeg" alt="Artwork 3">
+            </div>
+        </section>
+
+        <section class="recent-search">
+            <h2>Recent Search</h2>
+            <ul>
+                <li><img src="guerreira 4.jpeg" alt=""><a href="#">Raiden Shogun Build</a></li>
+                <li><img src="guerreira 5.jpeg" alt=""><a href="#">Raiden Shogun Wallpaper</a></li>
+                <li><img src="guerreira 6.jpeg" alt=""><a href="#">Raiden Shogun Cosplay</a></li>
+            </ul>
+        </section>
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>© 2024 Raiden Shogun Fan Page. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
+
+
+
+
+
+
+
